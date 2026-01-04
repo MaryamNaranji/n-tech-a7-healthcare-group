@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- insert shared head here -->
+</head>
+<body>
+  <header class="top-bar">...same nav...</header>
+
+  <section class="page-header">
+    <div class="container">
+      <h1>Book Now</h1>
+    </div>
+  </section>
+
+  <section class="container prose">
+    <h2>Request a service or consultation</h2>
+    <p>Fill out the form below and our care-coordinator will call you within 2 hours (Mon-Fri 08-18 ET).</p>
+  </section>
+
+  <section class="container">
+    <form action="https://formspree.io/f/your-id" method="POST">
+      <div class="grid-form">
+        <label>First name <input type="text" name="first-name" required></label>
+        <label>Last name <input type="text" name="last-name" required></label>
+        <label>Email <input type="email" name="email" required></label>
+        <label>Phone <input type="tel" name="phone" required></label>
+        <label>Zip code <input type="text" name="zip" pattern="[0-9]{5}" required></label>
+        <label>Preferred date <input type="date" name="date"></label>
+      </div>
+
+      <label>Service needed
+        <select name="service" required>
+          <option value="">Choose...</option>
+          <option>Medical supplies</option>
+          <option>Equipment service</option>
+          <option>In-home care</option>
+          <option>Transportation</option>
+          <option>Care coordination</option>
+        </select>
+      </label>
+
+      <label>Tell us more <textarea name="details" rows="4"></textarea></label>
+
+      <label class="checkbox">
+        <input type="checkbox" required>
+        I agree to the <a href="/privacy.html" target="_blank">privacy policy</a>.
+      </label>
+
+      <button type="submit" class="btn">Submit Request</button>
+    </form>
+  </section>
+
+  <footer class="site-footer">...</footer>
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

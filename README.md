@@ -1,1 +1,3 @@
-# n-tech-a7-healthcare-group
+.DS_Store
+Thumbs.db
+.vscode

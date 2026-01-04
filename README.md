@@ -1,54 +1,7 @@
-\# N-TECH \& A7 Healthcare Group — Unified Portal
+# N-TECH & A7 Healthcare Group – Multi-Page Site
 
+Static 5-page site (HTML/CSS/JS).  
+No build step; just drag-and-drop or `git push` to any static host.
 
-
-Next.js website deployed on Vercel with Firebase Auth + Firestore.
-
-
-
-\## Features
-
-\- Marketing site + service pages
-
-\- Request Service intake form (writes to Firestore securely)
-
-\- Partner referral form
-
-\- Admin dashboard (Firebase Auth; restrict reads via Firestore rules)
-
-\- PHI-minimizing fields (collect only what dispatch needs)
-
-
-
-\## Setup
-
-1\) Create Firebase project
-
-\- Enable \*\*Authentication\*\* (Email/Password)
-
-\- Create Firestore database
-
-
-
-2\) Create a service account for Admin SDK
-
-\- Project Settings → Service Accounts → Generate private key
-
-
-
-3\) Copy env vars
-
-\- `cp .env.example .env.local` and fill values
-
-
-
-4\) Install \& run
-
-```bash
-
-npm i
-
-npm run dev
-
-
-
+Pages: Home | About | Services | Contact | Book Now  
+Form endpoints: swap the Formspree ID in `contact.html` & `book.html` or replace with your own back-end.

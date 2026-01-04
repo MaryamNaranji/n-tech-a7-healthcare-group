@@ -1,0 +1,6 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>N-TECH & A7 Healthcare Group</title>
+<meta name="description" content="Integrated home-health supplies, equipment service, staffing, transportation and care coordination.">
+<link rel="icon" href="/assets/img/favicon.ico">
+<link rel="stylesheet" href="/assets/css/style.css">

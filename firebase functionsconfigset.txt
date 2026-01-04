@@ -1,0 +1,8 @@
+firebase functions:config:set \
+  sendgrid.key="SENDGRID_API_KEY" \
+  notify.email_to="dispatch@ntech-a7.com" \
+  notify.email_from="no-reply@ntech-a7.com" \
+  twilio.sid="TWILIO_ACCOUNT_SID" \
+  twilio.token="TWILIO_AUTH_TOKEN" \
+  twilio.from="+1XXXXXXXXXX" \
+  notify.sms_to="+1YYYYYYYYYY"

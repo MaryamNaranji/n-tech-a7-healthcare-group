@@ -1,0 +1,49 @@
+/* RESET */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:#f6f8fa;color:#222;line-height:1.5}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button,input,select,textarea{font:inherit}
+
+/* LAYOUT HELPERS */
+.container{max-width:900px;margin:0 auto;padding:0 1rem}
+.flex{display:flex;justify-content:space-between;align-items:center}
+.grid{display:grid;gap:1.5rem;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.two-col{display:grid;gap:2rem;grid-template-columns:1fr 1fr}@media(max-width:700px){.two-col{grid-template-columns:1fr}}
+.grid-form{display:grid;gap:1rem;grid-template-columns:1fr 1fr}@media(max-width:600px){.grid-form{grid-template-columns:1fr}}
+
+/* TOP BAR / NAV */
+.top-bar{background:#fff;box-shadow:0 2px 4px rgba(0,0,0,.06);position:sticky;top:0;z-index:10}
+.logo{font-weight:700;font-size:1.25rem;color:#0070f3}
+.nav-links{list-style:none;display:flex;gap:1.2rem;align-items:center}
+.hamburger{display:none;font-size:1.5rem;background:none;border:none}
+@media(max-width:700px){
+  .nav-links{position:absolute;left:0;right:0;top:60px;background:#fff;flex-direction:column;align-items:flex-start;padding:1rem;box-shadow:0 4px 8px rgba(0,0,0,.06);transform:translateY(-150%);transition:.3s}
+  .nav-links.open{transform:translateY(0)}
+  .hamburger{display:block}
+}
+
+/* BUTTONS */
+.btn{display:inline-block;padding:.75rem 1.4rem;background:#0070f3;color:#fff;border-radius:6px;font-weight:500;transition:background .2s}
+.btn:hover{background:#0059c1}
+
+/* HERO */
+.hero{text-align:center;padding:4rem 1rem 5rem;background:#fff}
+.hero h1{font-size:2.5rem;margin-bottom:1rem}
+
+/* PAGE HEADER */
+.page-header{background:#fff;padding:3rem 1rem 2rem;text-align:center}
+
+/* PROSE */
+.prose{max-width:700px;margin:0 auto;padding:3rem 1rem}
+.prose h2,.prose h3{margin-top:2rem;margin-bottom:.75rem}
+
+/* FORMS */
+form{display:flex;flex-direction:gap:1.2rem}label{display:flex;flex-direction:column;margin-bottom:.75rem}input,select,textarea{width:100%;padding:.5rem;border:1px solid #ccc;border-radius:4px}.checkbox{flex-direction row;align-items:center;gap:.5rem}
+
+/* FOOTER */
+.site-footer{background:#eef2f6;text-align:center;padding:2rem 1rem;font-size:.875rem;margin-top:3rem}
+.site-footer nav a{margin:0 .5rem}
+
+/* UTILS */
+.text-center{text-align:center}.mt-1{margin-top:1rem}.mb-1{margin-bottom:1rem}
